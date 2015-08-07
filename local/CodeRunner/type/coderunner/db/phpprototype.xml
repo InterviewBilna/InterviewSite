@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quiz>
+
+<!-- question: 0  -->
+
+  <question type="category">
+
+    <category>
+
+        <text>$system$/CR_PROTOTYPES</text>
+
+
+
+    </category>
+
+  </question>
+
+
+
+
+
+<!-- question: 2760  -->
+
+  <question type="coderunner">
+
+    <name>
+
+      <text>BUILT_IN_PROTOTYPE_php</text>
+
+    </name>
+
+    <questiontext format="html">
+
+      <text><![CDATA[<p>A php question in which the student submission is a normal php file, with PHP code enclosed in &lt;?php ... ?&gt; tags and the output is the usual PHP output including all HTML content outside the php tags.</p>]]></text>
+
+    </questiontext>
+
+    <generalfeedback format="html">
+
+      <text></text>
+
+    </generalfeedback>
+
+    <defaultgrade>1.0000000</defaultgrade>
+
+    <penalty>0.3333333</penalty>
+
+    <hidden>0</hidden>
+
+    <coderunnertype>php</coderunnertype>
+
+    <prototypetype>1</prototypetype>
+
+    <allornothing>1</allornothing>
+
+    <penaltyregime></penaltyregime>
+
+    <showsource>0</showsource>
+
+    <answerboxlines>18</answerboxlines>
+
+    <answerboxcolumns>100</answerboxcolumns>
+
+    <useace>1</useace>
+
+    <resultcolumns></resultcolumns>
+
+    <answer></answer>
+
+    <combinatortemplate><![CDATA[{{ STUDENT_ANSWER }}
+
+
+
+define('SEPARATOR', '#<ab@17943918#@>#');
+
+
+
+{% for TEST in TESTCASES %}
+
+{{ TEST.testcode }};
+
+{% if not loop.last %}
+
+echo SEPARATOR;
+
+{% endif %}
+
+{% endfor %}]]></combinatortemplate>
+
+    <testsplitterre><![CDATA[|#<ab@17943918#@>#\n|ms]]></testsplitterre>
+
+    <enablecombinator>1</enablecombinator>
+
+    <pertesttemplate>{{STUDENT_ANSWER}}
+
+
+
+{{TEST.testcode}}</pertesttemplate>
+
+    <language>php</language>
+
+    <acelang></acelang>
+
+    <sandbox></sandbox>
+
+    <grader>EqualityGrader</grader>
+
+    <cputimelimitsecs></cputimelimitsecs>
+
+    <memlimitmb>500000</memlimitmb>
+
+    <sandboxparams></sandboxparams>
+
+    <templateparams></templateparams>
+
+    <testcases>
+
+    </testcases>
+
+  </question>
+
+
+
+</quiz>
